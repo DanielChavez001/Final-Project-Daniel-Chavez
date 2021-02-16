@@ -1,0 +1,429 @@
+@import './colors';
+
+/*2000px resolution*/
+@media screen and (max-width: 2000px) {
+    body {
+        background-color: $main-bg-color;
+        font-family: Arial, Helvetica, sans-serif;}
+    .navbar {
+        overflow: hidden;
+        background-color: $navbar-color;
+        position: fixed;
+        top: 0;
+        width: 101%;
+        margin-left: -10px;
+        a {
+            float: left;
+            display: block;
+            color: $dark-green-color;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        a:hover {
+            background: $dark-gray-color;
+            color: $light-green-color;
+        }}
+    .logo {
+        width: 2.5%;
+        float: left;}
+    .preline {
+        font-size: large;
+        white-space: pre-line;
+        margin: 0px 100px 0px 100px;}
+    h1 {
+        margin: 80px 0px 0px 150px;
+        color: $add-navbar-color;}
+    .headder {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 45px;
+        color: #250f57;}
+    h2 {
+        color: $dark-green-color}
+    h3 {
+        color: $add-navbar-color}
+    h4 {
+        color: $dark-green-color}
+    .first-place {
+        background-color: $extra-color;
+        box-shadow: 3px 3px 15px $dark-gray-color;}
+    .About {
+        margin: -10px 200px 10px 200px;
+        padding: 10px 20px 20px 20px;
+        background-color: $extra-color;}
+    .us {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: white;}
+    .Recommended {
+        margin: 30px 20px 150px 20px;
+        height: 530px;
+        padding: 10px 0px 0px 140px;}
+    .Card {
+        display: inline-block;
+        width: 25%;
+        margin-right: 130px;
+        padding-bottom: 10px;
+        background-color: $Cards-color;}
+    .container {
+        font-size: medium;
+        padding: 0px 0px 0px 50px;}
+    .gbutton {
+            background-color: $add-navbar-color;
+            border: none;
+            color: $Cards-color;
+            padding: 7px 7px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 1px 2px;
+            cursor: pointer;}
+    a {
+        text-decoration: none;}
+    .Photo-Gallery {
+        width: 100%;}
+    .Photoshoot {
+        width: 50%;}
+    .item1 { grid-area: head; }
+    .item2 { grid-area: section; }
+    .item3 { grid-area: aside; }
+    .item4 { grid-area: footer; }
+    .item5 { grid-area: photo; }
+    .grid-container {
+            width: 60%;
+          margin: 80px auto 0px auto;
+          display: grid;
+          grid-template:
+            'head head head head head head'
+            'section section section aside aside aside'
+            'footer footer footer footer footer footer';
+          grid-gap: 3px;
+          background-color: $add-navbar-color;  
+          padding: 3px;
+          > div {
+            background-color: $Cards-color;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+          }}
+    .grid-box {
+        width: 60%;
+        margin: 80px auto 0px auto;
+        display: grid;
+        grid-template:
+            'head head head head head head'
+            'section section section section section section';
+        grid-gap: 3px;
+        background-color: $add-navbar-color;  
+        padding: 3px;
+        > div {
+            background-color: $Cards-color;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+          }}    
+    .upload {
+        display: block;
+        padding: 10%;
+        margin: 20px auto 0px auto;
+        background-color: $extra-color;}  
+    table {
+        margin: 90px auto 0px auto;}
+    .year-container {
+        margin: 90px 300px 100px 300px;
+        padding: 60px 60px 60px 60px;
+        background-color: $book-year-color;}
+    .book-year {
+        display: inline-block;
+        width: 30%;
+        margin-left: 150px;
+        font-size: large;}
+    .shadow {
+        box-shadow: 3px 3px 15px $dark-gray-color;}
+}
+/*1400px resolution*/
+@media screen and (max-width: 1400px) {
+    body {
+        background-color: $main-bg-color;
+        font-family: Arial, Helvetica, sans-serif;}
+    .navbar {
+        overflow: hidden;
+        background-color: $navbar-color;
+        position: fixed;
+        top: 0;
+        width: 101%;
+        margin-left: -10px;
+        a {
+            float: left;
+            display: block;
+            color: $dark-green-color;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        a:hover {
+            background: $dark-gray-color;
+            color: $light-green-color;
+        }}
+    .logo {
+        width: 3.5%;
+        float: left;}
+    .preline {
+        font-size: large;
+        white-space: pre-line;
+        margin: 0px 100px 0px 100px;}
+    h1 {
+        margin: 80px 0px 0px 150px;
+        color: $add-navbar-color;}
+    .headder {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 45px;
+        color: #250f57;}
+    h2 {
+        color: $dark-green-color}
+    h3 {
+        color: $add-navbar-color}
+    h4 {
+        color: $dark-green-color}
+    .first-place {
+        background-color: $extra-color;
+        box-shadow: 3px 3px 15px $dark-gray-color;}
+    .About {
+        margin: -10px 200px 10px 200px;
+        padding: 10px 20px 20px 20px;
+        background-color: $extra-color;}
+    .us {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: white;}
+    .Recommended {
+        margin: 30px 20px 150px 20px;
+        height: 380px;
+        padding: 10px 0px 0px 140px;}
+    .Card {
+        display: inline-block;
+        width: 25%;
+        margin-right: 70px;
+        padding-bottom: 10px;
+        background-color: $Cards-color;}
+    .container {
+        font-size: medium;
+        padding: 0px 0px 0px 50px;}
+    .gbutton {
+            background-color: $add-navbar-color;
+            border: none;
+            color: $Cards-color;
+            padding: 7px 7px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 1px 2px;
+            cursor: pointer;}
+    a {
+        text-decoration: none;}
+    .Photo-Gallery {
+        width: 100%;}
+    .Photoshoot {
+        width: 50%;}
+    .item1 { grid-area: head; }
+    .item2 { grid-area: section; }
+    .item3 { grid-area: aside; }
+    .item4 { grid-area: footer; }
+    .item5 { grid-area: photo; }
+    .grid-container {
+            width: 60%;
+          margin: 80px auto 0px auto;
+          display: grid;
+          grid-template:
+            'head head head head head head'
+            'section section section aside aside aside'
+            'footer footer footer footer footer footer';
+          grid-gap: 3px;
+          background-color: $add-navbar-color;  
+          padding: 3px;
+          > div {
+            background-color: $Cards-color;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+          }}
+    .grid-box {
+        width: 60%;
+        margin: 80px auto 0px auto;
+        display: grid;
+        grid-template:
+            'head head head head head head'
+            'section section section section section section';
+        grid-gap: 3px;
+        background-color: $add-navbar-color;  
+        padding: 3px;
+        > div {
+            background-color: $Cards-color;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+          }}    
+    .upload {
+        display: block;
+        padding: 10%;
+        margin: 20px auto 0px auto;
+        background-color: $extra-color;}  
+    table {
+        margin: 90px auto 0px auto;}
+    .year-container {
+        margin: 90px 120px 100px 120px;
+        padding: 60px 60px 60px 60px;
+        background-color: $book-year-color;}
+    .book-year {
+        display: inline-block;
+        width: 30%;
+        margin-left: 150px;
+        font-size: large;}
+    .shadow {
+        box-shadow: 3px 3px 15px $dark-gray-color;}
+}
+/*800px Resolution*/
+@media screen and (max-width: 800px) {
+    body {
+        background-color: $main-bg-color;
+        font-family: Arial, Helvetica, sans-serif;}
+    .navbar {
+        overflow: hidden;
+        background-color: $navbar-color;
+        position: fixed;
+        top: 0;
+        width: 101%;
+        margin-left: -10px;
+        a {
+            float: left;
+            display: block;
+            color: $dark-green-color;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        a:hover {
+            background: $dark-gray-color;
+            color: $light-green-color;
+        }}
+    .logo {
+        width: 10%;
+        float: left;}
+    .preline {
+        font-size: large;
+        white-space: pre-line;
+        margin: 0px 100px 0px 100px;}
+    h1 {
+        margin: 80px 0px 0px 150px;
+        color: $add-navbar-color;}
+    .headder {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 45px;
+        color: #250f57;}
+    h2 {
+        color: $dark-green-color}
+    h3 {
+        color: $add-navbar-color}
+    h4 {
+        color: $dark-green-color}
+    .first-place {
+        background-color: $extra-color;
+        box-shadow: 3px 3px 15px $dark-gray-color;}
+    .About {
+        margin: -10px 10px 10px 10px;
+        padding: 10px 20px 20px 20px;
+        background-color: $extra-color;}
+    .us {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: white;
+        font-size: small;}
+    .Recommended {
+        margin: 30px 20px 150px 20px;
+        height: 300px;
+        padding: 10px 0px 0px 10px;}
+    .Card {
+        display: inline-block;
+        width: 30%;
+        margin-right: 10px;
+        padding-bottom: 10px;
+        background-color: $Cards-color;}
+    .container {
+        font-size: medium;
+        padding: 0px 0px 0px 2px;}
+    .gbutton {
+            background-color: $add-navbar-color;
+            border: none;
+            color: $Cards-color;
+            padding: 7px 7px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 6px;
+            margin: 1px 2px;
+            cursor: pointer;}
+    a {
+        text-decoration: none;}
+    .Photo-Gallery {
+        width: 100%;}
+    .Photoshoot {
+        width: 50%;}
+    .item1 { grid-area: head; }
+    .item2 { grid-area: section; }
+    .item3 { grid-area: aside; }
+    .item4 { grid-area: footer; }
+    .item5 { grid-area: photo; }
+    .grid-container {
+            width: 100%;
+          margin: 80px auto 0px auto;
+          display: grid;
+          grid-template:
+            'head head head head head head'
+            'section section section section section aside'
+            'footer footer footer footer footer footer';
+          grid-gap: 3px;
+          background-color: $add-navbar-color;  
+          padding: 3px;
+          > div {
+            background-color: $Cards-color;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+          }}
+    .grid-box {
+        width: 100%;
+        margin: 80px auto 0px auto;
+        display: grid;
+        grid-template:
+            'head head head head head head'
+            'section section section section section section';
+        grid-gap: 3px;
+        background-color: $add-navbar-color;  
+        padding: 3px;
+        > div {
+            background-color: $Cards-color;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+          }}    
+    .upload {
+        display: block;
+        padding: 10%;
+        margin: 20px auto 0px auto;
+        background-color: $extra-color;}  
+    table {
+        margin: 90px auto 0px auto;}
+    .year-container {
+        margin: 90px 10px 100px 10px;
+        padding: 1px 1px 1px 1px;
+        background-color: $book-year-color;}
+    .book-year {
+        display: inline-block;
+        width: 80%;
+        margin-left: 20px;
+        font-size: large;}
+    .shadow {
+        box-shadow: 3px 3px 15px $dark-gray-color;}
+}

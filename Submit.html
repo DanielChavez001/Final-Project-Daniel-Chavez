@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="Style.css">
+        <title>BooksMedia</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <img src="Bm-logo.png" class="logo">
+            <a href="Daniel Chavez Final Project 1.html">Home</a>
+            <a href="Recommended.html">Recommended</a>
+            <a href="Submit.html">Submit</a>
+        </div>
+        <h1>Submit</h1>
+        <div class="upload shadow">
+            <div class="upload-photo">
+                <form action="/action_page.php">
+                    <input type="file" id="myFile" name="filename">
+                  </form>
+                  <br>
+                  <h3>Genres:</h3>
+                  <input type="text" placeholder="Genre"> <input type="text" placeholder="Genre"> <input type="text" placeholder="Genre">
+                  <h3>Series:</h3>
+                  <input type="text" placeholder="Series">
+                  <br><br>
+                  <input type="submit" value="Upload">
+            </div>
+        </div>
+        <table id="table">
+            <tr>
+                <th>Book</th>
+                <th>Edition</th>
+                <th>Popularity</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <script>
+            var Meals = [["The Hunger Games","First","High"],
+                ["IT","First","High"],
+                ["Mistborn","Third","High"]]
+            var table = document.getElementById("table");
+
+            for(var i = 1; i < table.rows.length; i++)
+            {
+
+            for(var j = 0; j < table.rows[i].cells.length; j++)
+            {
+              table.rows[i].cells[j].innerHTML = Meals[i - 1][j];
+            }
+            }
+
+
+            var rows = document.getElementsByTagName("tr"); 
+
+            for (i=1; i < rows.length; i++) {
+            rows[i].addEventListener("mouseover", mouseOver);
+            rows[i].addEventListener("mouseout", mouseOut);
+
+            rows[i].style.color="black";
+            }   
+
+            function mouseOver() {
+            this.style.color = "#c1502e";
+            }
+
+            function mouseOut() {
+                this.style.color = "black";
+            }
+        </script>
+    </body>
+</html>
